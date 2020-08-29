@@ -26,14 +26,22 @@ import {
 import FooterNavigation from "./views/footer/FooterNavigation.component";
 import AdSpace from "./views/ads/AdSpace.component";
 import HeaderNavigation from "./views/header/HeaderNavigation.component";
+import VersePicker from "./views/verse-picker/VersePicker.component";
 
 const App: () => React$Node = () => {
+  const [sCurrentScreen, setCurrentScreen] = React.useState(0)
+
+  const changeScreen = e => {
+    setCurrentScreen(e)
+  }
+
   return (
     <>
       <StatusBar barStyle="dark-content" hidden={false} />
       <HeaderNavigation />
       <SafeAreaView style={styles.savStyle}>
         {/*Implement some switching to handle different views...*/}
+        {sCurrentScreen === 0 && <VersePicker changeScreen={changeScreen} />}
       </SafeAreaView>
       <AdSpace />
       <FooterNavigation />
