@@ -5,7 +5,7 @@ import ExperienceBar from "../../components/experience-bar/ExperienceBar.compone
 import Gem from "../../components/gem/Gem.component";
 import VerseChooser from "../../components/verse-chooser/VerseChooser.component";
 
-const VersePicker: () => React$Node = ({changeScreen}) => {
+const VersePicker: () => React$Node = ({changeScreen, currentScreen}) => {
     const onPlusUpClick = e => {
         console.log('click it up')
         if(changeScreen) {

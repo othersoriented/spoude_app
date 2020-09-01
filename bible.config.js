@@ -1,11 +1,7 @@
-export const ESV_SERVER = 'https://api.esv.org/v3/passage'
-export const ESV_API_KEY = '532db1019d927c9bf32b4f450f6b3a76a8fe02d4'
-
-
 const Bible = [
     {
         name: 'Genesis', 
-        abbr: '',
+        abbr: 'Ge',
         chapters: 50,
         verses: [
             31, 25, 24, 26, 32, 22, 24, 22, 29, 32, 32, 20, 18, 24, 
@@ -15,7 +11,7 @@ const Bible = [
     },
     {
         name: 'Exodus', 
-        abbr: '',
+        abbr: 'Ex',
         chapters: 40,
         verses: [
             22, 25, 22, 31, 23, 30, 25, 32, 35, 29, 10, 51, 22, 31, 
@@ -24,7 +20,7 @@ const Bible = [
     }, 
     {
         name: 'Leviticus', 
-        abbr: '',
+        abbr: 'Le',
         chapters: 27,
         verses: [
             17, 16, 17, 35, 19, 30, 38, 36, 24, 20, 47, 8, 59, 57, 
@@ -33,7 +29,7 @@ const Bible = [
     },
     { 
         name: 'Numbers', 
-        abbr: '',
+        abbr: 'Nu',
         chapters: 36,
         verses: [
             54, 34, 51, 49, 31, 27, 89, 26, 23, 36, 35, 16, 33, 45, 
@@ -43,7 +39,7 @@ const Bible = [
     },
     { 
         name: 'Deuteronomy', 
-        abbr: '',
+        abbr: 'Dt',
         chapters: 34,
         verses: [
             46, 37, 29, 49, 33, 25, 26, 20, 29, 22, 32, 32, 18, 29, 
@@ -53,7 +49,7 @@ const Bible = [
     },
     { 
         name: 'Joshua', 
-        abbr: '',
+        abbr: 'Jos',
         chapters: 24,
         verses: [
             18, 24, 17, 24, 15, 27, 26, 35, 27, 43, 23, 24, 33, 15, 
@@ -62,7 +58,7 @@ const Bible = [
     },
     { 
         name: 'Judges', 
-        abbr: '',
+        abbr: 'Jdg',
         chapters: 21,
         verses: [
             36, 23, 31, 24, 31, 40, 25, 35, 57, 18, 40, 15, 25, 20, 
@@ -71,7 +67,7 @@ const Bible = [
     },
     { 
         name: 'Ruth', 
-        abbr: '',
+        abbr: 'Ru',
         chapters: 4,
         verses: [
             22, 23, 18, 22
@@ -79,7 +75,7 @@ const Bible = [
     },
     { 
         name: '1 Samuel', 
-        abbr: '',
+        abbr: '1Sa',
         chapters: 31,
         verses: [
             28, 36, 21, 22, 12, 21, 17, 22, 27, 27, 15, 25, 23, 52, 
@@ -89,7 +85,7 @@ const Bible = [
     },
     { 
         name: '2 Samuel', 
-        abbr: '',
+        abbr: '2Sa',
         chapters: 24,
         verses: [
             27, 32, 39, 12, 25, 23, 29, 18, 13, 19, 27, 31, 39, 33, 
@@ -98,7 +94,7 @@ const Bible = [
     },
     { 
         name: '1 Kings', 
-        abbr: '',
+        abbr: '1Ki',
         chapters: 22,
         verses: [
             53, 46, 28, 34, 18, 38, 51, 66, 28, 29, 43, 33, 34, 31, 
@@ -107,7 +103,7 @@ const Bible = [
     },
     { 
         name: '2 Kings', 
-        abbr: '',
+        abbr: '2Ki',
         chapters: 25,
         verses: [
             18, 25, 27, 44, 27, 33, 20, 29, 37, 36, 21, 21, 25, 29, 
@@ -116,7 +112,7 @@ const Bible = [
     },
     { 
         name: '1 Chronicles', 
-        abbr: '',
+        abbr: '1Ch',
         chapters: 29,
         verses: [
             54, 55, 24, 43, 26, 81, 40, 40, 44, 14, 47, 40, 14, 17, 
@@ -126,7 +122,7 @@ const Bible = [
     },
     { 
         name: '2 Chronicles', 
-        abbr: '',
+        abbr: '2Ch',
         chapters: 36,
         verses: [
             17, 18, 17, 22, 14, 42, 22, 18, 31, 19, 23, 16, 22, 15, 
@@ -136,7 +132,7 @@ const Bible = [
     },
     { 
         name: 'Ezra', 
-        abbr: '',
+        abbr: 'Ezr',
         chapters: 10,
         verses: [
             11, 70, 13, 24, 17, 22, 28, 36, 15, 44
@@ -144,7 +140,7 @@ const Bible = [
     },
     { 
         name: 'Nehemiah', 
-        abbr: '',
+        abbr: 'Ne',
         chapters: 13,
         verses: [
             11, 20, 32, 23, 19, 19, 73, 18, 38, 39, 36, 47, 31
@@ -152,7 +148,7 @@ const Bible = [
     },
     { 
         name: 'Esther', 
-        abbr: '',
+        abbr: 'Es',
         chapters: 10,
         verses: [
             22, 23, 15, 17, 14, 14, 10, 17, 32, 3
@@ -160,7 +156,7 @@ const Bible = [
     },
     { 
         name: 'Job', 
-        abbr: '',
+        abbr: 'Job',
         chapters: 42,
         verses: [
             22, 13, 26, 21, 27, 30, 21, 22, 35, 22, 20, 25, 28, 22, 
@@ -170,7 +166,7 @@ const Bible = [
     },
     { 
         name: 'Psalms', 
-        abbr: '',
+        abbr: 'Ps',
         chapters: 150,
         verses: [
             6, 12, 8, 8, 12, 10, 17, 9, 20, 18, 7, 8, 6, 7, 5, 11, 
@@ -187,7 +183,7 @@ const Bible = [
     },
     { 
         name: 'Proverbs', 
-        abbr: '',
+        abbr: 'Pr',
         chapters: 31,
         verses: [
             33, 22, 35, 27, 23, 35, 27, 36, 18, 32, 31, 28, 25, 35, 
@@ -197,7 +193,7 @@ const Bible = [
     },
     { 
         name: 'Ecclesiastes', 
-        abbr: '',
+        abbr: 'Ec',
         chapters: 12,
         verses: [
             18, 26, 22, 16, 20, 12, 29, 17, 18, 20, 10, 14
@@ -205,7 +201,7 @@ const Bible = [
     },
     { 
         name: 'Song of Solomon', 
-        abbr: '',
+        abbr: 'So',
         chapters: 8,
         verses: [
             17, 17, 11, 16, 16, 13, 13, 14
@@ -213,7 +209,7 @@ const Bible = [
     },
     { 
         name: 'Isaiah', 
-        abbr: '',
+        abbr: 'Is',
         chapters: 66,
         verses: [
             31, 22, 26, 6, 30, 13, 25, 22, 21, 34, 16, 6, 22, 32, 9, 
@@ -225,7 +221,7 @@ const Bible = [
     },
     { 
         name: 'Jeremiah', 
-        abbr: '',
+        abbr: 'Je',
         chapters: 52,
         verses: [
             19, 37, 25, 31, 31, 30, 34, 22, 26, 25, 23, 17, 27, 22, 
@@ -236,7 +232,7 @@ const Bible = [
     },
     { 
         name: 'Lamentations', 
-        abbr: '',
+        abbr: 'La',
         chapters: 5,
         verses: [
             22, 22, 66, 22, 22
@@ -244,7 +240,7 @@ const Bible = [
     },
     { 
         name: 'Ezekiel', 
-        abbr: '',
+        abbr: 'Eze',
         chapters: 48,
         verses: [
             28, 10, 27, 17, 17, 14, 27, 18, 11, 22, 25, 28, 23, 23, 
@@ -255,7 +251,7 @@ const Bible = [
     },
     { 
         name: 'Daniel', 
-        abbr: '',
+        abbr: 'Da',
         chapters: 12,
         verses: [
             21, 49, 30, 37, 31, 28, 28, 27, 27, 21, 45, 13
@@ -263,7 +259,7 @@ const Bible = [
     },
     { 
         name: 'Hosea', 
-        abbr: '',
+        abbr: 'Ho',
         chapters: 14,
         verses: [
             11, 23, 5, 19, 15, 11, 16, 14, 17, 15, 12, 14, 16, 9
@@ -271,7 +267,7 @@ const Bible = [
     },
     { 
         name: 'Joel', 
-        abbr: '',
+        abbr: 'Joe',
         chapters: 3,
         verses: [
             20, 32, 21
@@ -279,7 +275,7 @@ const Bible = [
     },
     { 
         name: 'Amos', 
-        abbr: '',
+        abbr: 'Am',
         chapters: 9,
         verses: [
             15, 16, 15, 13, 27, 14, 17, 14, 15
@@ -287,7 +283,7 @@ const Bible = [
     },
     { 
         name: 'Obadiah', 
-        abbr: '',
+        abbr: 'Ob',
         chapters: 1,
         verses: [
             21
@@ -295,7 +291,7 @@ const Bible = [
     },
     { 
         name: 'Jonah', 
-        abbr: '',
+        abbr: 'Jon',
         chapters: 4,
         verses: [
             17, 10, 10, 11
@@ -303,7 +299,7 @@ const Bible = [
     },
     { 
         name: 'Micah', 
-        abbr: '',
+        abbr: 'Mic',
         chapters: 7,
         verses: [
             16, 13, 12, 13, 15, 16, 20
@@ -311,7 +307,7 @@ const Bible = [
     },
     { 
         name: 'Nahum', 
-        abbr: '',
+        abbr: 'Na',
         chapters: 3,
         verses: [
             15, 13, 19
@@ -319,7 +315,7 @@ const Bible = [
     },
     { 
         name: 'Habakkuk', 
-        abbr: '',
+        abbr: 'Hab',
         chapters: 3,
         verses: [
             17, 20, 19
@@ -327,7 +323,7 @@ const Bible = [
     },
     { 
         name: 'Zephaniah', 
-        abbr: '',
+        abbr: 'Zep',
         chapters: 3,
         verses: [
             18, 15, 20
@@ -335,7 +331,7 @@ const Bible = [
     },
     { 
         name: 'Haggai', 
-        abbr: '',
+        abbr: 'Hag',
         chapters: 2,
         verses: [
             15, 23
@@ -343,7 +339,7 @@ const Bible = [
     },
     { 
         name: 'Zechariah', 
-        abbr: '',
+        abbr: 'Zec',
         chapters: 14,
         verses: [
             21, 13, 10, 14, 11, 15, 14, 23, 17, 12, 17, 14, 9, 21
@@ -351,7 +347,7 @@ const Bible = [
     },
     { 
         name: 'Malachi', 
-        abbr: '',
+        abbr: 'Mal',
         chapters: 4,
         verses: [
             14, 17, 18, 6
@@ -359,7 +355,7 @@ const Bible = [
     },
     { 
         name: 'Matthew', 
-        abbr: '',
+        abbr: 'Mt',
         chapters: 28,
         verses: [
             25, 23, 17, 25, 48, 34, 29, 34, 38, 42, 30, 50, 58, 36, 
@@ -368,7 +364,7 @@ const Bible = [
     },
     { 
         name: 'Mark', 
-        abbr: '',
+        abbr: 'Mk',
         chapters: 16,
         verses: [
             45, 28, 35, 41, 43, 56, 37, 38, 50, 52, 33, 44, 37, 72, 
@@ -377,7 +373,7 @@ const Bible = [
     },
     { 
         name: 'Luke', 
-        abbr: '',
+        abbr: 'Lk',
         chapters: 24,
         verses: [
             80, 52, 38, 44, 39, 49, 50, 56, 62, 42, 54, 59, 35, 35, 
@@ -386,7 +382,7 @@ const Bible = [
     },
     { 
         name: 'John', 
-        abbr: '',
+        abbr: 'Jn',
         chapters: 21,
         verses: [
             51, 25, 36, 54, 47, 71, 53, 59, 41, 42, 57, 50, 38, 31, 
@@ -395,7 +391,7 @@ const Bible = [
     },
     { 
         name: 'Acts', 
-        abbr: '',
+        abbr: 'Ac',
         chapters: 28,
         verses: [
             26, 47, 26, 37, 42, 15, 60, 40, 43, 48, 30, 25, 52, 28, 
@@ -404,7 +400,7 @@ const Bible = [
     },
     { 
         name: 'Romans', 
-        abbr: '',
+        abbr: 'Ro',
         chapters: 16,
         verses: [
             32, 29, 31, 25, 21, 23, 25, 39, 33, 21, 36, 21, 14, 23, 
@@ -413,7 +409,7 @@ const Bible = [
     },
     { 
         name: '1 Corinthians', 
-        abbr: '',
+        abbr: '1Co',
         chapters: 16,
         verses: [
             31, 16, 23, 21, 13, 20, 40, 13, 27, 33, 34, 31, 13, 40, 
@@ -422,7 +418,7 @@ const Bible = [
     },
     { 
         name: '2 Corinthians', 
-        abbr: '',
+        abbr: '2Co',
         chapters: 13,
         verses: [
             24, 17, 18, 18, 21, 18, 16, 24, 15, 18, 33, 21, 14
@@ -430,7 +426,7 @@ const Bible = [
     },
     { 
         name: 'Galatians', 
-        abbr: '',
+        abbr: 'Ga',
         chapters: 6,
         verses: [
             24, 21, 29, 31, 26, 18
@@ -438,7 +434,7 @@ const Bible = [
     },
     { 
         name: 'Ephesians', 
-        abbr: '',
+        abbr: 'Eph',
         chapters: 6,
         verses: [
             23, 22, 21, 32, 33, 24
@@ -446,7 +442,7 @@ const Bible = [
     },
     { 
         name: 'Philippians', 
-        abbr: '',
+        abbr: 'Php',
         chapters: 4,
         verses: [
             30, 30, 21, 23
@@ -454,7 +450,7 @@ const Bible = [
     },
     { 
         name: 'Colossians', 
-        abbr: '',
+        abbr: 'Col',
         chapters: 4,
         verses: [
             29, 23, 25, 18
@@ -462,7 +458,7 @@ const Bible = [
     },
     { 
         name: '1 Thessalonians', 
-        abbr: '',
+        abbr: '1Th',
         chapters: 5,
         verses: [
             10, 20, 13, 18, 28
@@ -470,7 +466,7 @@ const Bible = [
     },
     { 
         name: '2 Thessalonians', 
-        abbr: '',
+        abbr: '2Th',
         chapters: 3,
         verses: [
             12, 17, 18
@@ -478,7 +474,7 @@ const Bible = [
     },
     { 
         name: '1 Timothy', 
-        abbr: '',
+        abbr: '1Ti',
         chapters: 6,
         verses: [
             20, 15, 16, 16, 25, 21
@@ -486,7 +482,7 @@ const Bible = [
     },
     { 
         name: '2 Timothy', 
-        abbr: '',
+        abbr: '2Ti',
         chapters: 4,
         verses: 
             [
@@ -495,7 +491,7 @@ const Bible = [
     },
     { 
         name: 'Titus', 
-        abbr: '',
+        abbr: 'Tt',
         chapters: 3,
         verses: [
             16, 15, 15
@@ -503,7 +499,7 @@ const Bible = [
     },
     { 
         name: 'Philemon', 
-        abbr: '',
+        abbr: 'Phm',
         chapters: 1,
         verses: [
             25
@@ -511,7 +507,7 @@ const Bible = [
     },
     { 
         name: 'Hebrews', 
-        abbr: '',
+        abbr: 'Heb',
         chapters: 13,
         verses: [
             14, 18, 19, 16, 14, 20, 28, 13, 28, 39, 40, 29, 25
@@ -519,7 +515,7 @@ const Bible = [
     },
     { 
         name: 'James', 
-        abbr: '',
+        abbr: 'Jas',
         chapters: 5,
         verses: [
             27, 26, 18, 17, 20
@@ -527,7 +523,7 @@ const Bible = [
     },
     { 
         name: '1 Peter', 
-        abbr: '',
+        abbr: '1Pe',
         chapters: 5,
         verses: [
             25, 25, 22, 19, 14
@@ -535,7 +531,7 @@ const Bible = [
     },
     { 
         name: '2 Peter', 
-        abbr: '',
+        abbr: '2Pe',
         chapters: 3,
         verses: [
             21, 22, 18
@@ -543,7 +539,7 @@ const Bible = [
     },
     { 
         name: '1 John', 
-        abbr: '',
+        abbr: '1Jo',
         chapters: 5,
         verses: [
             10, 29, 24, 21, 21
@@ -551,7 +547,7 @@ const Bible = [
     },
     { 
         name: '2 John', 
-        abbr: '',
+        abbr: '2Jo',
         chapters: 1,
         verses: [
             13
@@ -560,7 +556,7 @@ const Bible = [
     },
     { 
         name: '3 John', 
-        abbr: '',
+        abbr: '3Jo',
         chapters: 1,
         verses: [
             15
@@ -568,7 +564,7 @@ const Bible = [
     },
     { 
         name: 'Jude', 
-        abbr: '',
+        abbr: 'Jud',
         chapters: 1,
         verses: [
             25
@@ -576,7 +572,7 @@ const Bible = [
     },
     { 
         name: 'Revelation', 
-        abbr: '',
+        abbr: 'Re',
         chapters: 22,
         verses: [
             20, 29, 22, 11, 14, 17, 17, 13, 21, 11, 19, 17, 18, 20, 

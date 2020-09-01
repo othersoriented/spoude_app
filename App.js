@@ -10,41 +10,35 @@ import React from 'react';
 import {
   SafeAreaView,
   StyleSheet,
-  ScrollView,
-  View,
-  Text,
   StatusBar,
+    Text
 } from 'react-native';
 
 import {
-  Header,
-  LearnMoreLinks,
   Colors,
-  DebugInstructions,
-  ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 import FooterNavigation from "./views/footer/FooterNavigation.component";
 import AdSpace from "./views/ads/AdSpace.component";
 import HeaderNavigation from "./views/header/HeaderNavigation.component";
 import VersePicker from "./views/verse-picker/VersePicker.component";
-import {fetchVerse} from "./network/ESV.api";
-import Bible from "./bible.config";
+import BookSelector from "./views/verse-picker/book-selector.component.js/BookSelector.component";
 
 const App: () => React$Node = () => {
   const [sCurrentScreen, setCurrentScreen] = React.useState(0)
+  const [sVerseSelections, setVerseSelections] = React.useState({
+    book: 0,
+    chapter: 0,
+    verse: 0
+  })
 
-  const changeScreen = e => {
-    setCurrentScreen(e)
+  const changeScreen = (screen, key, index) => {
+    if(key && index) // Book Picker
+      setVerseSelections({
+        ...sVerseSelections,
+        [key]: index
+      })
+    setCurrentScreen(screen)
   }
-
-  React.useEffect(() => {
-    console.log('For testing api calls.  <<<< REMOVE THIS CODE')
-    fetchVerse(32, 4, 4)
-        .catch(err => {
-          console.log('ERROR', err)
-        })
-
-  }, [])
 
   return (
     <>
@@ -52,7 +46,12 @@ const App: () => React$Node = () => {
       <HeaderNavigation />
       <SafeAreaView style={styles.savStyle}>
         {/*Implement some switching to handle different views...*/}
-        {sCurrentScreen === 0 && <VersePicker changeScreen={changeScreen} />}
+        {sCurrentScreen === 0 && <VersePicker changeScreen={changeScreen} currentScreen={sCurrentScreen} />}
+        {sCurrentScreen === 1 && <BookSelector
+            selections={sVerseSelections}
+
+            changeScreen={changeScreen}
+            currentScreen={sCurrentScreen} />}
       </SafeAreaView>
       <AdSpace />
       <FooterNavigation />
