@@ -27,6 +27,8 @@ import FooterNavigation from "./views/footer/FooterNavigation.component";
 import AdSpace from "./views/ads/AdSpace.component";
 import HeaderNavigation from "./views/header/HeaderNavigation.component";
 import VersePicker from "./views/verse-picker/VersePicker.component";
+import {fetchVerse} from "./network/ESV.api";
+import Bible from "./bible.config";
 
 const App: () => React$Node = () => {
   const [sCurrentScreen, setCurrentScreen] = React.useState(0)
@@ -34,6 +36,15 @@ const App: () => React$Node = () => {
   const changeScreen = e => {
     setCurrentScreen(e)
   }
+
+  React.useEffect(() => {
+    console.log('For testing api calls.  <<<< REMOVE THIS CODE')
+    fetchVerse(32, 4, 4)
+        .catch(err => {
+          console.log('ERROR', err)
+        })
+
+  }, [])
 
   return (
     <>
